@@ -8,6 +8,24 @@
 
 ---
 
+## 📑 Sumário
+
+- [📖 Descrição](#-descrição)
+- [🎯 Objetivo](#-objetivo)
+- [💡 Proposta de Solução](#-proposta-de-solução)
+- [👥 Stakeholders](#-stakeholders)
+- [🧠 Técnicas de Elicitação](#-técnicas-de-elicitação)
+  - [📋 Entrevista](#-entrevista)
+  - [🔎 Análise da Entrevista](#-análise-da-entrevista)
+  - [📝 Questionário](#-questionário)
+  - [📊 Resultados do Questionário](#-resultados-do-questionário)
+- [⚙️ Requisitos do Sistema](#️-requisitos-do-sistema)
+  - [✅ Requisitos Funcionais](#-requisitos-funcionais)
+  - [🚀 Requisitos Funcionais Evolutivos](#-requisitos-funcionais-evolutivos)
+  - [🔒 Requisitos Não Funcionais](#-requisitos-não-funcionais)
+- [👨‍💻 Colaboradores](#-colaboradores)
+- [🎓 Disciplina](#-disciplina)
+
 ## 📖 Descrição
 
 Este repositório apresenta a atividade avaliativa desenvolvida na disciplina de Processos de Software e Engenharia de Requisitos, do Instituto Federal de Educação, Ciência e Tecnologia Farroupilha (IFFar) — Campus São Borja, como requisito parcial para aprovação na disciplina.

@@ -71,7 +71,42 @@ Como ocorre a comunicação entre coordenação, professores e setores de apoio 
 
 ## 🔎 Análise da Entrevista
 
-escrever texto
+### Indicadores de evasão
+
+- Indicadores quantitativos (frequência, desempenho, atividades entregues).
+- Aluno que frequenta a aula, mas abandona as atividades propostas (sinal de alerta precoce).
+- O coordenador não tem acesso direto aos dados socioeconômicos e pessoais no sistema (SIGAA) e não são usados diretamente na análise de evasão, mas essas questões são discutidas em reuniões e esses dados podem ser solicitados se necessário.
+
+### Momento de intervenção
+
+- Duas semanas consecutivas de faltas ou ausências em dias de avaliação (e na véspera) são um sinal de possível evasão.
+- A janela de ação deve ser estritamente preventiva.
+- Uma vez que o aluno decide abandonar o curso, o contato da coordenação (por telefone, por exemplo) é visto como invasivo, por se tratar de um público adulto.
+
+### Monitoramento acadêmico
+
+- Atualmente é manual e ineficiente. A coordenação precisa baixar dezenas de PDFs de diários de classe SIGAA e planilhas e cruzar faltas e matrículas.
+- Em reuniões semanais é discutida a situação das turmas e alunos.
+- 90% dos alunos têm matrículas irregulares (não existem "turmas fechadas"). Acompanhar o histórico individual de mais de 100 alunos sem um painel centralizado é inviável.
+- Os dados de acesso ao ambiente virtual são restritos aos professores.
+
+### Identificação de problemas
+
+- O sistema atual (SIGAA) apresenta dados desestruturados. Além disso, a irregularidade das matrículas cria "pontos cegos" (não ver o aluno no campus não significa, necessariamente, que ele faltou).
+- A solução proposta é uma ferramenta com upload quinzenal de diários que extraia faltas automaticamente e gere alertas de infrequência.
+- Em um segundo momento, há o desejo de automatizar a chamada integrando RFID, reconhecimento facial e cartões institucionais.
+
+### Planejamento acadêmico e evasão
+
+- Aulas com quatro períodos contínuos na mesma noite potencializam a evasão (a falta em um único dia causa uma perda enorme de conteúdo). O modelo ideal dividiria essa carga em duas noites.
+- A montagem dos horários é travada pela disponibilidade geral dos professores no campus, dificultando o planejamento ideal para o curso.
+- Quando os alunos decidem abandonar, geralmente desistem do curso como um todo, embora ocorram abandonos pontuais de disciplinas específicas (como programação).
+
+### Comunicação institucional
+
+- O contato entre coordenação e setores de apoio (SAP, CAE, SRA) é feito por e-mail, pois permite o registro do acompanhamento.
+- Entre os professores, realizam reuniões e conversam entre eles quando identificam uma possível evasão.
+- A adoção de conselhos de classe na metade do semestre (inspirados no ensino médio integrado) é pensada como uma estratégia de melhoria para identificar riscos e avaliar o desempenho de forma mais rápida e assertiva.
 
 ## 📝 Questionário
 

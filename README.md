@@ -8,7 +8,7 @@
 
 ---
 
-# 📖 Descrição
+## 📖 Descrição
 
 Este repositório apresenta a atividade avaliativa desenvolvida na disciplina de Processos de Software e Engenharia de Requisitos, do Instituto Federal de Educação, Ciência e Tecnologia Farroupilha (IFFar) — Campus São Borja, como requisito parcial para aprovação na disciplina.
 
@@ -270,7 +270,7 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 🐙 GitHub: https://github.com/Raiane-ssilva <br>
 ✉️ email: `raiane.42080@aluno.iffar.edu.br`
 
-### Lian Lago Silva
+### Tiago Flores da Silva
 📍 Instituição: Instituto Federal de Educação, Ciência e Tecnologia Farroupilha (IFFAr) — Campus São Borja <br>
 🐙 GitHub: https://github.com/floresTiago <br>
 ✉️ email: `tiago.85032@aluno.iffar.edu.br`

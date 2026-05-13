@@ -239,35 +239,41 @@ Este último gráfico mostra que os apoios institucionais mais valorizados são 
 
 ## ✅ Requisitos Funcionais
 
-### RF001 — Visualizar dados unificados dos alunos
-O sistema deverá exibir os principais dados dos alunos (perfil, frequência, desempenho acadêmico, disciplinas cursadas e indicadores de risco) centralizados em uma dashboard única para o coordenador do curso.
+### RF001 — Visualizar alunos em risco de evasão
+O sistema deve exibir para o coordenador do curso uma lista contendo os alunos identificados com propensão à evasão, apresentando o nível de risco (alto, médio, baixo) e os dados básicos de identificação.
 
-### RF002 — Importar diários de classe
-O sistema deverá permitir que o docente ou coordenador importe o diário de classe de cada disciplina contendo frequência e informações acadêmicas.
+### RF002 — Pesquisar alunos
+O sistema deve permitir ao coordenador do curso pesquisar os alunos do curso de SI para uma consulta rápida.
 
-### RF003 — Visualizar acompanhamento individual do aluno
-O sistema deverá permitir acessar a visão detalhada de um aluno específico, apresentando histórico acadêmico, disciplinas vinculadas, indicadores de desempenho e alertas registrados.
+### RF003 —  Importar diários de classe
+O sistema deverá permitir que o docente ou coordenador importe o diário de classe de cada disciplina..
 
-### RF004 — Identificar automaticamente o risco de infrequência
-O sistema deverá analisar dados de frequência por disciplina e emitir alertas automáticos ao docente quando forem identificados riscos de abandono da disciplina.
+### RF004 — Gerar acompanhamento individual do aluno
+O sistema deverá exibir em um painel os dados individuais de cada aluno, as disciplinas cursadas, mostrando o histórico acadêmico (notas e frequência) e o alerta ligado a ele.
 
-### RF005 — Identificar riscos de evasão do curso
-O sistema deverá processar dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão, exibindo alertas aos usuários responsáveis.
+### RF005 — Identificar automaticamente o risco de infrequência de cada disciplina
+O sistema deverá identificar e emitir ao docente um alerta de desistência da disciplina.
 
-### RF006 — Gerenciar notificações institucionais automáticas
-O sistema deverá enviar notificações automáticas para diferentes perfis institucionais conforme o nível de risco identificado (ex.: alertas de infrequência para docentes e alertas de evasão para coordenadores).
+### RF006 — Identificar riscos de evasão
+O sistema deve processar os dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão, exibindo alertas aos usuários responsáveis.
 
 ### RF007 — Importar e analisar semestralmente as notas
-O sistema deverá permitir a importação das notas finais do semestre para compor o histórico de desempenho acadêmico do aluno e possibilitar análise evolutiva.
+O sistema deve permitir a importação das notas finais do semestre para compor o histórico de desempenho do aluno.
 
-### RF008 — Enviar mensagens automatizadas para estudantes
-O sistema deverá gerar e enviar mensagens pré-formatadas para estudantes identificados com risco de evasão, utilizando canais institucionais definidos (ex.: e-mail institucional).
+### RF008 — Enviar mensagens para alunos com risco de evasão
+O sistema deve gerar mensagens pré-formatadas para alunos que estão com risco de desistência da disciplina ou risco de evasão.  
 
-### RF009 — Encaminhar alunos para apoio estudantil
-O sistema deverá permitir o encaminhamento de alunos em risco para serviços institucionais de apoio estudantil (assistência pedagógica, psicológica ou social).
+### RF009 — Encaminhar alunos para grupos de apoio estudantil
+o sistema deve permitir ao coordenador encaminhar os estudantes com risco de evasão aos grupos de apoio estudantil.
 
-### RF010 — Exibir histórico de intervenções
-O sistema deverá registrar e apresentar o histórico de intervenções realizadas, incluindo datas de alertas, notificações enviadas, encaminhamentos realizados e comunicações institucionais relacionadas ao aluno.
+### RF010 — Gerenciar encaminhamento aos grupos de apoio
+O sistema deve permitir aos grupos de apoio estudantil confirmar encaminhamento, agendar horário e após a data marcada confirmar comparecimento do estudante.
+
+### RF011 — Importar atas
+O sistema deve permitir aos grupos de apoio estudantil importar atas da reunião ao sistemas se necessário.
+
+### RF012 — Exibir histórico de intervenção
+O sistema deve mostrar datas das mensagens automáticas enviadas, encaminhamentos, registro de comunicação externos e alertas dos docentes.
 
 ## 🚀 Requisitos Funcionais Evolutivos
 

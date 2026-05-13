@@ -24,7 +24,7 @@ Identificar quais indicadores acadêmicos e administrativos a coordenação cons
 
 # 💡 Proposta de Solução
 
-escrever texto
+Um sistema que integra e analisa automaticamente, a partir dos diários de classe, os dados de frequência, desempenho acadêmico e disciplinas cursadas. A plataforma gera alertas automáticos para docentes em caso risco de desistência em disciplinas específicas e para o coordenador quando houver risco de evasão do curso, permitindo ainda o envio de mensagens automatizadas aos estudantes identificados como possíveis desistentes e o encaminhamento direto do aluno aos serviços de assistência estudantil, mantendo um histórico detalhado das comunicações realizadas.  O sistema também conta com o acompanhamento semestral de notas para averiguação do desempenho acadêmico do aluno e sua evolução ao longo do semestre.
 
 # 👥 Stakeholders
 

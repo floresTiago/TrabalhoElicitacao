@@ -22,6 +22,10 @@ Atualmente, essas informações encontram-se distribuídas em diferentes sistema
 
 Identificar quais indicadores acadêmicos e administrativos a coordenação considera críticos para sinalizar o risco de evasão e compreender o fluxo de gestão de trancamentos e planos de intervenção.
 
+# 💡 Proposta de Solução
+
+escrever texto
+
 # 👥 Stakeholders
 
 ### 1. Coordenação de Curso: 
@@ -65,11 +69,16 @@ Durante o planejamento das disciplinas e horários do semestre, existem estraté
 ### **6. Comunicação institucional**
 Como ocorre a comunicação entre coordenação, professores e setores de apoio institucional (como CAE/SAP) no acompanhamento de alunos em risco? Existe algum processo ou informação adicional considerado essencial para fortalecer ações de retenção estudantil?
 
+## 🔎 Análise da Entrevista
+
+escrever texto
+
 ## 📝 Questionário
 
 ## Objetivo do Questionário
 
 O questionário tem como objetivo identificar quais fatores acadêmicos, financeiros, psicológicos e sociais mais influenciam a permanência dos estudantes no curso, além de compreender quais formas de apoio institucional são consideradas mais relevantes para auxiliar na redução da evasão estudantil.
+
 
 ## Perguntas do Questionário
 
@@ -140,6 +149,8 @@ Quais apoios institucionais você considera mais importantes para ajudar estudan
 - Moderadamente importante
 - Importante
 - Muito importante
+
+## 📊 Resultados do Questionário
 
 # ⚙️ Requisitos do Sistema
 

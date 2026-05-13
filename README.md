@@ -20,6 +20,8 @@ Atualmente, essas informações encontram-se distribuídas em diferentes sistema
 
 # 🎯 Objetivo
 
+Identificar quais indicadores acadêmicos e administrativos a coordenação considera críticos para sinalizar o risco de evasão e compreender o fluxo de gestão de trancamentos e planos de intervenção.
+
 # 👥 Stakeholders
 
 ### 1. Coordenação de Curso: 
@@ -65,13 +67,132 @@ Como ocorre a comunicação entre coordenação, professores e setores de apoio 
 
 ## 📝 Questionário
 
+## Objetivo do Questionário
+
+O questionário tem como objetivo identificar quais fatores acadêmicos, financeiros, psicológicos e sociais mais influenciam a permanência dos estudantes no curso, além de compreender quais formas de apoio institucional são consideradas mais relevantes para auxiliar na redução da evasão estudantil.
+
+## Perguntas do Questionário
+
+### **1. Intenção de evasão**
+
+Com que frequência você já pensou em desistir do curso?
+
+**Escala de resposta:**
+- (1) Nunca
+- (2) Raramente
+- (3) Às vezes
+- (4) Frequentemente
+
+### **2. Fatores que influenciam a permanência no curso**
+
+Em que medida os aspectos abaixo influenciam sua permanência no curso?
+
+**Itens avaliados:**
+- Trabalho
+- Tempo para estudo
+- Psicológico/Financeiro
+- Deveres familiares
+
+**Alternativas da grade:**
+- Não influencia
+- Influencia pouco
+- Influencia moderadamente
+- Influencia muito
+
+### **3. Impactos das dificuldades no desempenho acadêmico**
+
+Quando apresenta dificuldades, o quanto elas costumam afetar os aspectos acadêmicos abaixo?
+
+**Itens avaliados:**
+- Frequência
+- Notas baixas
+- Entrega de tarefas
+- Interação em aula
+- Acompanhar matérias
+
+**Alternativas da grade:**
+- Não afeta
+- Afeta levemente
+- Afeta moderadamente
+- Afeta muito
+
+### **4. Retorno percebido do esforço acadêmico**
+
+Você sente que o esforço dedicado às disciplinas está sendo compensado pelo conhecimento adquirido?
+
+**Escala de resposta:**
+- (1) Não sinto retorno vindo do esforço
+- (2) Sinto pouco retorno
+- (3) Sinto retorno moderado
+- (4) Sinto forte retorno e motivação
+
+### **5. Importância dos apoios institucionais**
+
+Quais apoios institucionais você considera mais importantes para ajudar estudantes a permanecer no curso?
+
+**Itens avaliados:**
+- Coordenação de SI
+- Docentes
+- Núcleo de apoio ao estudante (CAE, SAP, SRA)
+
+**Alternativas da grade:**
+- Pouco importante
+- Moderadamente importante
+- Importante
+- Muito importante
+
 # ⚙️ Requisitos do Sistema
 
 ## ✅ Requisitos Funcionais
 
+### RF001 — Visualizar dados unificados dos alunos
+O sistema deverá exibir os principais dados dos alunos (perfil, frequência, desempenho acadêmico, disciplinas cursadas e indicadores de risco) centralizados em uma dashboard única para o coordenador do curso.
+
+### RF002 — Importar diários de classe
+O sistema deverá permitir que o docente ou coordenador importe o diário de classe de cada disciplina contendo frequência e informações acadêmicas.
+
+### RF003 — Visualizar acompanhamento individual do aluno
+O sistema deverá permitir acessar a visão detalhada de um aluno específico, apresentando histórico acadêmico, disciplinas vinculadas, indicadores de desempenho e alertas registrados.
+
+### RF004 — Identificar automaticamente o risco de infrequência
+O sistema deverá analisar dados de frequência por disciplina e emitir alertas automáticos ao docente quando forem identificados riscos de abandono da disciplina.
+
+### RF005 — Identificar riscos de evasão do curso
+O sistema deverá processar dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão, exibindo alertas aos usuários responsáveis.
+
+### RF006 — Gerenciar notificações institucionais automáticas
+O sistema deverá enviar notificações automáticas para diferentes perfis institucionais conforme o nível de risco identificado (ex.: alertas de infrequência para docentes e alertas de evasão para coordenadores).
+
+### RF007 — Importar e analisar semestralmente as notas
+O sistema deverá permitir a importação das notas finais do semestre para compor o histórico de desempenho acadêmico do aluno e possibilitar análise evolutiva.
+
+### RF008 — Enviar mensagens automatizadas para estudantes
+O sistema deverá gerar e enviar mensagens pré-formatadas para estudantes identificados com risco de evasão, utilizando canais institucionais definidos (ex.: e-mail institucional).
+
+### RF009 — Encaminhar alunos para apoio estudantil
+O sistema deverá permitir o encaminhamento de alunos em risco para serviços institucionais de apoio estudantil (assistência pedagógica, psicológica ou social).
+
+### RF010 — Exibir histórico de intervenções
+O sistema deverá registrar e apresentar o histórico de intervenções realizadas, incluindo datas de alertas, notificações enviadas, encaminhamentos realizados e comunicações institucionais relacionadas ao aluno.
+
 ## 🚀 Requisitos Funcionais Evolutivos
 
+### RFE001 — Importação dos conselhos de classe
+O sistema poderá permitir a importação de registros e observações provenientes dos conselhos de classe, auxiliando na identificação de padrões relacionados ao desempenho e permanência dos estudantes.
+
+### RFE002 — Registro automatizado de presença
+O sistema poderá realizar o registro automatizado de presença dos estudantes por meio de integrações futuras com sistemas institucionais ou tecnologias de controle de acesso.
+
 ## 🔒 Requisitos Não Funcionais
+
+### RNF001 — Interoperabilidade de formatos
+O sistema deverá operar de forma independente do SIGAA, não exigindo integração direta com a plataforma para recebimento e processamento de dados acadêmicos.
+
+### RNF002 — Segurança e privacidade de dados sensíveis
+O sistema deverá garantir a proteção e confidencialidade dos dados acadêmicos, pessoais e socioeconômicos dos estudantes, restringindo o acesso às informações conforme o perfil institucional do usuário.
+
+### RNF003 — Periodicidade do processamento de indicadores
+O sistema deverá processar e atualizar os indicadores de evasão em intervalos máximos de 15 dias, garantindo informações recentes para acompanhamento institucional.
 
 # 👨‍💻 Colaboradores
 

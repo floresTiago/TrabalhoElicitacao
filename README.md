@@ -318,3 +318,10 @@ Instituto Federal de Educação, Ciência e Tecnologia Farroupilha — Campus S�
 Docente: *Rafael Baldiati Parizi*  
 
 Semestre: *2026/1*
+
+<br>
+
+<p align="right">
+  <img src="./images/logoIFFAr.png" width="120">
+  <img src="./images/logoSI.jpg" width="75">
+</p>

@@ -195,7 +195,7 @@ Pergunta 1: Com que frequência você já pensou em desistir do curso? <br>
   <img src="./images/graficoFrequenciaDesistencia.png" width="700">
 </p>
 
-[texto de analise]
+Conforme o gráfico, das 11 respostas obtidas, a maioria se concentra em frequências baixas. No entanto, o número de pessoas que nunca pensaram em desistir se iguala ao de quem pensa frequentemente. 
 
 ### Influência de fatores na permanência estudantil
 Perguntas 2: Em que medida os aspectos abaixo influenciam sua permanência no curso?
@@ -204,7 +204,7 @@ Perguntas 2: Em que medida os aspectos abaixo influenciam sua permanência no cu
   <img src="./images/graifcoAspectosExternos.png" width="700">
 </p>
 
-[texto de analise]
+Este outro gráfico mostra que o tempo para estudo e questões psicológicas e financeiras são aspectos de influência mais constante desistência do curso. Contudo, o trabalho e deveres familiares destacam-se com maior peso (influencia muito).
 
 ### Impacto das dificuldades no desempenho acadêmico
 Pergunta 3: Quando apresenta dificuldades, o quanto elas costumam afetar os aspectos acadêmicos abaixo?
@@ -213,7 +213,7 @@ Pergunta 3: Quando apresenta dificuldades, o quanto elas costumam afetar os aspe
   <img src="./images/graficoAspectosInternos.png" width="700">
 </p>
 
-[texto de analise]
+Conforme o levantamento, o que mais afeta academicamente um aluno quando apresenta dificuldades são notas baixas (impacto moderado)  e o acompanhamento das matérias. 
 
 ### Retorno percebido do esforço acadêmico
 Pergunta 4: Você sente que o esforço dedicado às disciplinas está sendo compensado pelo conhecimento adquirido? <br>
@@ -223,7 +223,7 @@ Pergunta 4: Você sente que o esforço dedicado às disciplinas está sendo comp
   <img src="./images/graficoMotivacao.png" width="700">
 </p>
 
-[texto de analise]
+Este outro gráfico demonstra que o retorno percebido pelo esforço acadêmico é primariamente positivo, apresentando apenas 2 respostas realmente negativas.
 
 ### Importância dos apoios institucionais
 
@@ -233,7 +233,7 @@ Pergunta 5: Quais apoios institucionais você considera mais importantes para aj
   <img src="./images/graficoAvaliacaoSuporte.png" width="700">
 </p>
 
-[texto de analise]
+Este último gráfico mostra que os apoios institucionais mais valorizados são dos docentes e da coordenação do curso.
 
 # ⚙️ Requisitos do Sistema
 

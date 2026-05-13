@@ -152,6 +152,54 @@ Quais apoios institucionais você considera mais importantes para ajudar estudan
 
 ## 📊 Resultados do Questionário
 
+### Frequência de pensamentos sobre desistência do curso
+Pergunta 1: Com que frequência você já pensou em desistir do curso? <br>
+(1 - Nunca / 4 - Frequentemente)
+
+<p align="center">
+  <img src="./images/graficoFrequenciaDesistencia.png" width="700">
+</p>
+
+[texto de analise]
+
+### Influência de fatores na permanência estudantil
+Perguntas 2: Em que medida os aspectos abaixo influenciam sua permanência no curso?
+
+<p align="center">
+  <img src="./images/graifcoAspectosExternos.png" width="700">
+</p>
+
+[texto de analise]
+
+### Impacto das dificuldades no desempenho acadêmico
+Pergunta 3: Quando apresenta dificuldades, o quanto elas costumam afetar os aspectos acadêmicos abaixo?
+
+<p align="center">
+  <img src="./images/graficoAspectosInternos.png" width="700">
+</p>
+
+[texto de analise]
+
+### Retorno percebido do esforço acadêmico
+Pergunta 4: Você sente que o esforço dedicado às disciplinas está sendo compensado pelo conhecimento adquirido? <br>
+(1 - Não sinto retorno do esforço / 4 - Sinto forte retorno e motivação)
+
+<p align="center">
+  <img src="./images/graficoMotivacao.png" width="700">
+</p>
+
+[texto de analise]
+
+### Importância dos apoios institucionais
+
+Pergunta 5: Quais apoios institucionais você considera mais importantes para ajudar estudantes a permanecer no curso?
+
+<p align="center">
+  <img src="./images/graficoAvaliacaoSuporte.png" width="700">
+</p>
+
+[texto de analise]
+
 # ⚙️ Requisitos do Sistema
 
 ## ✅ Requisitos Funcionais

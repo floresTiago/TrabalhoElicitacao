@@ -264,22 +264,22 @@ O sistema deve exibir para o coordenador do curso uma lista contendo os alunos i
 O sistema deve permitir ao coordenador do curso pesquisar os alunos do curso de SI para uma consulta rápida.
 
 ### RF003 —  Importar diários de classe
-O sistema deverá permitir que o docente ou coordenador importe o diário de classe de cada disciplina..
+O sistema deverá permitir que o docente ou coordenador importe o diário de classe de cada disciplina.
 
 ### RF004 — Gerar acompanhamento individual do aluno
 O sistema deverá exibir em um painel os dados individuais de cada aluno, as disciplinas cursadas, mostrando o histórico acadêmico (notas e frequência) e o alerta ligado a ele.
 
 ### RF005 — Identificar automaticamente o risco de infrequência de cada disciplina
-O sistema deverá identificar e emitir ao docente um alerta de desistência da disciplina.
+O sistema deverá identificar e emitir ao docente um alerta de desistência da disciplina após duas faltas consecutivas.
 
 ### RF006 — Identificar riscos de evasão
-O sistema deve processar os dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão, exibindo alertas aos usuários responsáveis.
+O sistema deve processar os dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão quando ocorre alerta de infrequência em várias disciplinas, exibindo alertas aos usuários responsáveis.
 
 ### RF007 — Importar e analisar semestralmente as notas
 O sistema deve permitir a importação das notas finais do semestre para compor o histórico de desempenho do aluno.
 
 ### RF008 — Enviar mensagens para alunos com risco de evasão
-O sistema deve gerar mensagens pré-formatadas para alunos que estão com risco de desistência da disciplina ou risco de evasão.  
+O sistema deve gerar mensagens pré-formatadas e enviar por e-mail para alunos que estão com risco de desistência da disciplina ou risco de evasão.  
 
 ### RF009 — Encaminhar alunos para grupos de apoio estudantil
 o sistema deve permitir ao coordenador encaminhar os estudantes com risco de evasão aos grupos de apoio estudantil.

@@ -312,6 +312,109 @@ O sistema deverá garantir a proteção e confidencialidade dos dados acadêmico
 ### RNF003 — Periodicidade do processamento de indicadores
 O sistema deverá processar e atualizar os indicadores de evasão em intervalos máximos de 15 dias, garantindo informações recentes para acompanhamento institucional.
 
+# História de Usuário
+
+## História de usuário 001
+
+### Card
+texto
+
+### Conversation
+texto
+
+### Confirmation
+texto
+
+## História de usuário 002
+
+### Card
+texto
+
+### Conversation
+texto
+
+### Confirmation
+texto
+
+## História de usuário 003
+
+### Card
+texto
+
+### Conversation
+texto
+
+### Confirmation
+texto
+
+## História de usuário 004
+
+### Card
+Como coordenador do curso,
+quero enviar mensagens pré-formatadas aos alunos com risco de evasão
+para facilitar o contato com os estudantes.
+
+### Conversation
+- Apenas alunos identificados com risco de evasão podem receber mensagens automáticas.
+- O sistema deve permitir que o coordenador revise a mensagem antes do envio.
+- O envio da mensagem deve ocorrer somente após confirmação manual do coordenador.
+- O sistema deve registrar data, horário e responsável pelo envio da mensagem.
+- Alunos com status “Trancado” ou “Cancelado” não devem receber notificações.
+
+### Confirmation
+- O sistema deve gerar mensagens automáticas com padrão institucional para alunos em risco de evasão.
+- A mensagem deve conter nome do aluno e motivo do alerta.
+- O coordenador deve poder editar a mensagem antes do envio.
+- O envio da mensagem deve ser registrado no histórico do aluno.
+- Alunos com mensagens pendentes de envio devem possuir um alerta visual na lista de alunos em risco de evasão.
+- Após o envio da mensagem ou após o coordenador optar por não enviá-la, o alerta deve ser removido automaticamente da lista de alunos em risco.
+
+## História de usuário 005
+
+### Card
+texto
+
+### Conversation
+texto
+
+### Confirmation
+texto
+
+# Cenários BDD
+
+## Cenário 01
+
+### 01 Cenário Fluxo Principal
+texto
+
+### 01 Cenário Fluxo Alternativo
+
+## Cenário 02
+
+### 02 Cenário Fluxo Principal
+texto
+
+### 02 Cenário Fluxo Alternativo
+
+## Cenário 03
+
+### 03 Cenário Fluxo Principal
+#### Cenário: coordenador envia mensagem para aluno identificado em risco
+Dado que o aluno "Carlos" está marcado como "em risco de evasão"
+e Carlos possui duas semanas consecutivas de infrequência
+Quando o coordenador confirma o envio da mensagem pré-formatada
+Então o sistema envia a mensagem para Carlos
+e registra o envio no histórico do aluno
+e remove o alerta de mensagem pendente da lista de risco
+
+### 03 Cenário Fluxo Alternativo
+#### Cenário: aluno em risco sem contato cadastrado
+Dado que o aluno "Marcos" está marcado como "em risco de evasão"
+e Marcos não possui e-mail cadastrado
+Quando o coordenador visualizar os alertas de evasão
+Então o sistema deve identificar Marcos como "sem contato disponível"
+E deve exibir um alerta informando a ausência de contato cadastrado
+
 # 👨‍💻 Colaboradores
 
 ### Naiele de Ávila Fagundes

@@ -282,7 +282,7 @@ O sistema deve permitir a importação das notas finais do semestre para compor 
 O sistema deve gerar mensagens pré-formatadas e enviar por e-mail para alunos que estão com risco de desistência da disciplina ou risco de evasão.  
 
 ### RF009 — Encaminhar alunos para grupos de apoio estudantil
-o sistema deve permitir ao coordenador encaminhar os estudantes com risco de evasão aos grupos de apoio estudantil.
+O sistema deve permitir ao coordenador encaminhar os estudantes com risco de evasão aos grupos de apoio estudantil.
 
 ### RF010 — Gerenciar encaminhamento aos grupos de apoio
 O sistema deve permitir aos grupos de apoio estudantil confirmar encaminhamento, agendar horário e após a data marcada confirmar comparecimento do estudante.

@@ -345,7 +345,9 @@ para que o sistema possa processar e extrair automaticamente as informações de
 ## História de usuário 003
 
 ### Card
-texto
+Como docente e coordenador do curso,
+quero que seja identificados alunos com infrequência nas disciplinas em que está matriculado, 
+para distinguir alunos que abandonaram apenas uma disciplina ou o semestre de modo geral, possibilitando a intervenção antecipada.
 
 ### Conversation
 texto

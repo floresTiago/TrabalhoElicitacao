@@ -341,7 +341,7 @@ para que o sistema possa processar e extrair automaticamente as informações de
 
 ### Confirmation
 - O sistema deve mostrar uma mensagem verde de sucesso após o upload bem sucedido.
-- Uma mensagem de aviso vermelha deve aparecer na tela do docente para avisar que o prazo de 15 dias está para vencer.
+- Uma mensagem de aviso vermelha deve aparecer na tela do docente faltando 3 dias para o vencimento do prazo de 15 dias.
 - O sistema deve exibir um indicador de carregamento na tela enquanto processa o arquivo, bloqueando novos envios até a conclusão. 
 
 ## História de usuário 003

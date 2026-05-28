@@ -344,7 +344,6 @@ para que o sistema possa processar e extrair automaticamente os dados dos alunos
 - Uma mensagem de aviso vermelha deve aparecer na tela do docente faltando 3 dias para o vencimento do prazo de 15 dias.
 - O sistema deve exibir um indicador de carregamento na tela enquanto processa o arquivo, bloqueando novos envios até a conclusão.
 - Uma mensagem laranja de alerta deve ser exibida caso o docente envie um arquivo acima do máximo suportado.
-- Se o docente atrasar em 1 dia o envio do diário de classe, o sistema realiza o envio automático de um e-mail lembrando que o diário de classe deve ser enviado em até 15 dias para que a análise de risco seja eficiente.  
 
 ## História de usuário 003
 
@@ -403,10 +402,23 @@ texto
 
 ## Cenário 02
 
-### 02 Cenário Fluxo Principal
-texto
+### Cenário: docente realiza importação do diário de classe
+#### 02 Cenário Fluxo Principal
+Dado que o professor “Rafael” está logado no sistema e acessa a área de importação da disciplina de "Processos de Software e Engenharia de Requisitos”
+E o arquivo selecionado "diario_disciplina.pdf" possui 15 MB e está no formato correto
+Quando “Rafael” confirma o envio do arquivo
+Então o sistema exibe o indicador de carregamento bloqueando a tela para novos envios
+E extrai a matrícula, nome, datas e presenças dos alunos registrados no PDF
+E exibe a mensagem verde "Diário importado com sucesso" após o processamento
 
 ### 02 Cenário Fluxo Alternativo
+#### Cenário: docente importa arquivo acima do limite
+Dado que o docente “Icaro” anexa o arquivo "historico_completo_turmas.zip" para a importação
+E o tamanho verificado do sistema é 55 MB
+Quando “Icaro” clica no botão de confirmar o envio
+Então o sistema cancela a operação imediatamente sem exibir o indicador de carregamento
+E exibe uma mensagem laranja de alerta informando que o arquivo excede o tamanho máximo suportado 
+E nenhum registro da disciplina é alterado no banco de dados.
 
 ## Cenário 03
 

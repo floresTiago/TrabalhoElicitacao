@@ -350,6 +350,17 @@ texto
 ## História de usuário 004
 
 ### Card
+texto
+
+### Conversation
+texto
+
+### Confirmation
+texto
+
+## História de usuário 005
+
+### Card
 Como coordenador do curso,
 quero enviar mensagens pré-formatadas aos alunos com risco de evasão
 para facilitar o contato com os estudantes.
@@ -368,17 +379,6 @@ para facilitar o contato com os estudantes.
 - O envio da mensagem deve ser registrado no histórico do aluno.
 - Alunos com mensagens pendentes de envio devem possuir um alerta visual na lista de alunos em risco de evasão.
 - Após o envio da mensagem ou após o coordenador optar por não enviá-la, o alerta deve ser removido automaticamente da lista de alunos em risco.
-
-## História de usuário 005
-
-### Card
-texto
-
-### Conversation
-texto
-
-### Confirmation
-texto
 
 # Cenários BDD
 

@@ -333,7 +333,9 @@ eu quero realizar o upload do diário de classe de minhas disciplinas
 para que o sistema possa processar e extrair automaticamente as informações de frequência dos alunos matriculados nela.
 
 ### Conversation
-texto
+- O upload dos diários deverá ser realizado de forma quinzenal para garantir que a atualização dos indicadores ocorram em um intervalo máximo de 15 dias.
+- O sistema deve receber arquivos do tipo PDF baixados pelo SIGAA.
+- Devem ser extraídos do arquivo a matrícula, nomes, datas de aulas e presença dos alunos matriculados nas disciplinas importadas.
 
 ### Confirmation
 texto

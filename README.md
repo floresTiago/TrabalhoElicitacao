@@ -330,11 +330,11 @@ texto
 ### Card
 Como docente, 
 eu quero realizar o upload do diário de classe de minhas disciplinas 
-para que o sistema possa processar e extrair automaticamente as informações de frequência dos alunos matriculados nela.
+para que o sistema possa processar e extrair automaticamente os dados dos alunos matriculados nela.
 
 ### Conversation
 - O upload dos diários deverá ser realizado de forma quinzenal para garantir que a atualização dos indicadores ocorram em um intervalo máximo de 15 dias.
-- O sistema deve receber arquivos baixados pelo SIGAA independente do formato.
+- O sistema deve receber arquivos baixados pelo SIGAA e funcionar de forma independente dele.
 - Devem ser extraídos do arquivo a matrícula, nomes, datas de aulas e presença dos alunos matriculados nas disciplinas importadas.
 - Caso o mesmo arquivo seja importado duas vezes, o sistema deve sobrescrever os dados de frequência anteriores e salvar a nova frequência.
 - O sistema deve receber arquivos de até 50 MB. 
@@ -342,7 +342,9 @@ para que o sistema possa processar e extrair automaticamente as informações de
 ### Confirmation
 - O sistema deve mostrar uma mensagem verde de sucesso após o upload bem sucedido.
 - Uma mensagem de aviso vermelha deve aparecer na tela do docente faltando 3 dias para o vencimento do prazo de 15 dias.
-- O sistema deve exibir um indicador de carregamento na tela enquanto processa o arquivo, bloqueando novos envios até a conclusão. 
+- O sistema deve exibir um indicador de carregamento na tela enquanto processa o arquivo, bloqueando novos envios até a conclusão.
+- Uma mensagem laranja de alerta deve ser exibida caso o docente envie um arquivo acima do máximo suportado.
+- Se o docente atrasar em 1 dia o envio do diário de classe, o sistema realiza o envio automático de um e-mail lembrando que o diário de classe deve ser enviado em até 15 dias para que a análise de risco seja eficiente.  
 
 ## História de usuário 003
 

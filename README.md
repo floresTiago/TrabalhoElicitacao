@@ -328,7 +328,9 @@ texto
 ## História de usuário 002
 
 ### Card
-texto
+Como docente, 
+eu quero realizar o upload do diário de classe de minhas disciplinas 
+para que o sistema possa processar e extrair automaticamente as informações de frequência dos alunos matriculados nela.
 
 ### Conversation
 texto

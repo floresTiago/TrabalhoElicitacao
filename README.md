@@ -334,11 +334,13 @@ para que o sistema possa processar e extrair automaticamente as informações de
 
 ### Conversation
 - O upload dos diários deverá ser realizado de forma quinzenal para garantir que a atualização dos indicadores ocorram em um intervalo máximo de 15 dias.
-- O sistema deve receber arquivos do tipo PDF baixados pelo SIGAA.
+- O sistema deve receber arquivos baixados pelo SIGAA independente do formato.
 - Devem ser extraídos do arquivo a matrícula, nomes, datas de aulas e presença dos alunos matriculados nas disciplinas importadas.
+- 
 
 ### Confirmation
-texto
+- O sistema deve mostrar uma mensagem verde de sucesso após o upload bem sucedido.
+- Uma mensagem de aviso vermelha deve aparecer na tela do docente para avisar que o prazo de 15 dias está para vencer. 
 
 ## História de usuário 003
 

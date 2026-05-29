@@ -273,7 +273,7 @@ O sistema deverá exibir em um painel os dados individuais de cada aluno, as dis
 O sistema deverá identificar e emitir ao docente um alerta de desistência da disciplina após duas faltas consecutivas.
 
 ### RF006 — Identificar riscos de evasão
-O sistema deve processar os dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão quando ocorre alerta de infrequência em várias disciplinas, exibindo alertas aos usuários responsáveis.
+O sistema deve processar os dados cadastrais, acadêmicos e comportamentais previamente registrados para identificar automaticamente alunos com potencial risco de evasão quando ocorre alerta de infrequência em várias disciplinas, exibindo um alerta aos coordenador do curso.
 
 ### RF007 — Importar e analisar semestralmente as notas
 O sistema deve permitir a importação das notas finais do semestre para compor o histórico de desempenho do aluno.

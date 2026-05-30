@@ -413,9 +413,9 @@ E exibe a mensagem verde "Diário importado com sucesso" após o processamento
 
 ### 02 Cenário Fluxo Alternativo
 #### Cenário: docente importa arquivo acima do limite
-Dado que o docente “Icaro” anexa o arquivo "historico_completo_turmas.zip" para a importação
+Dado que o docente “Pedro” anexa o arquivo "historico_completo_turmas.zip" para a importação
 E o tamanho verificado do sistema é 55 MB
-Quando “Icaro” clica no botão de confirmar o envio
+Quando “Pedro” clica no botão de confirmar o envio
 Então o sistema cancela a operação imediatamente sem exibir o indicador de carregamento
 E exibe uma mensagem laranja de alerta informando que o arquivo excede o tamanho máximo suportado 
 E nenhum registro da disciplina é alterado no banco de dados.

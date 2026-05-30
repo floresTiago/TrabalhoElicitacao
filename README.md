@@ -464,7 +464,7 @@ E deve exibir um alerta informando a ausência de contato cadastrado
 
 # 👨‍💻 Colaboradores
 
-### Naiele de Ávila Fagundes
+### Naiele de Avila Fagundes
 📍 Instituição: Instituto Federal de Educação, Ciência e Tecnologia Farroupilha (IFFAr) — Campus São Borja <br>
 🐙 GitHub: https://github.com/NaieleFagundes <br>
 ✉️ email: `naiele.11092@aluno.iffar.edu.br`

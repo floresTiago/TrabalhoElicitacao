@@ -317,13 +317,20 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 ## História de usuário 001
 
 ### Card
-texto
+Como coordenador do curso, quero ver uma lista com todos os alunos e que classifique-os em diferentes níveis de risco de evasão para tomar medidas preventivas que evitem a desistência do curso.
 
 ### Conversation
-texto
+- O sistema deve exibir uma listagem contendo os seguintes dados de cada aluno matriculado no curso: Nome, Matrícula, Semestre atual e Nível de Risco (Alto, Médio, Baixo).
+- A ordenação padrão da lista deve ser decrescente pelo nível de risco, ou seja, os alunos classificados como "Alto Risco" devem aparecer obrigatoriamente no topo.
+- O sistema deve utilizar indicadores visuais (cores ou ícones) para destacar e diferenciar os três níveis de risco na listagem.
+- A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado.
+- A tabela não deve carregar todos os alunos de uma vez. A listagem deve ser dividida em páginas, exibindo um limite máximo de 25 alunos por página, onde a primeira página deve conter os alunos com o risco mais crítico.
 
 ### Confirmation
-texto
+- O painel do coordenador deve renderizar um painel com uma tabela ao centro contendo as colunas: Nome, Matrícula, Semestre e Risco de Evasão;
+- A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Alto Risco” no topo, seguidos de “Médio Risco” (laranja) e, por último, “Baixo Risco” (Branco)
+- As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno.
+- O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o curso possua mais de 25 alunos importados.
 
 ## História de usuário 002
 

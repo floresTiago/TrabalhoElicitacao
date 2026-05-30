@@ -402,10 +402,26 @@ para facilitar o contato com os estudantes.
 
 ## Cenário 01
 
+### Cenário: coordenador acessa o sistema para visualizar os alunos
 ### 01 Cenário Fluxo Principal
-texto
+Dado que os alunos “Maria”, “João” e “Marcos” estão previamente ordenados no sistema por Nome, Matrícula, Semestre e Risco
+E os respectivos alunos são classificados como “Alto Risco”, “Médio Risco” e “Baixo Risco”
+Quando o coordenador “Rafael” acessar o dashboard da tela de monitoramento
+Então o sistema deve mostrar uma tabela central com as colunas: Nome, Matrícula, Semestre e Risco de Evasão
+E a linha de “Maria” deve aparecer na primeira posição destacada com a cor vermelha
+E a linha de “João” deve vir abaixo na cor laranja
+E a linha de “Marcos” deve estar na base da lista com a cor branca
+E o sistema deve exibir no rodapé da tabela os botões de controle de paginação indicando que está na página 1
 
+### Cenário: coordenador busca os dados detalhados do aluno
 ### 01 Cenário Fluxo Alternativo
+Dado que o coordenador “Rafael” acessa a tela inicial do sistema
+E visualiza a tabela dos alunos em risco de evasão
+Quando o coordenador realiza um clique sobre a linha da aluna “Maria”
+Então o sistema direciona o coordenador para a tela de acompanhamento individual
+E a nova tela deve carregar todos os dados específicos de nome, matrícula e semestre de “Maria”
+E a aplicação também deve carregar o histórico acadêmico da aluna, contendo dados como notas e frequência por disciplinas
+E deve manter os alertas de risco associados às disciplinas individuais de “Maria”
 
 ## Cenário 02
 

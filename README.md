@@ -342,7 +342,7 @@ para que o sistema possa processar e extrair automaticamente os dados dos alunos
 ### Conversation
 - O upload dos diários deverá ser realizado de forma quinzenal para garantir que a atualização dos indicadores ocorram em um intervalo máximo de 15 dias.
 - O sistema deve receber arquivos baixados pelo SIGAA e funcionar de forma independente dele.
-- Devem ser extraídos do arquivo a matrícula, nomes, datas de aulas e presença dos alunos matriculados nas disciplinas importadas.
+- Devem ser extraídos do arquivo o semestre, matrícula, nomes, datas de aulas e presença dos alunos matriculados nas disciplinas importadas.
 - Caso o mesmo arquivo seja importado duas vezes, o sistema deve sobrescrever os dados de frequência anteriores e salvar a nova frequência.
 - O sistema deve receber arquivos de até 50 MB. 
 

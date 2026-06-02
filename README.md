@@ -432,9 +432,9 @@ E a linha de “Marcos” deve estar na base da lista com a cor branca <br>
 
 ### Cenário: coordenador busca os dados detalhados do aluno
 ### 01 Cenário Fluxo Alternativo
-Dado que o coordenador “Rafael” visualiza a tabela dos alunos em risco de evasão
-Quando o coordenador realiza um clique sobre a linha da aluna “Maria”
-Então o sistema direciona o coordenador para a tela de acompanhamento individual da respectiva aluna.
+Dado que o coordenador “Rafael” visualiza a tabela dos alunos em risco de evasão <br>
+Quando o coordenador realiza um clique sobre a linha da aluna “Maria” <br>
+Então o sistema direciona o coordenador para a tela de acompanhamento individual da respectiva aluna. <br>
 
 ## Cenário 02
 

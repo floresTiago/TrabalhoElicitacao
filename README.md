@@ -320,11 +320,13 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 Como coordenador do curso, quero ver uma lista com todos os alunos e que classifique-os em diferentes níveis de risco de evasão para tomar medidas preventivas que evitem a desistência do curso.
 
 ### Conversation
-- O sistema deve exibir uma listagem contendo os seguintes dados de cada aluno matriculado no curso: Nome, Matrícula, Semestre atual e Nível de Risco (Alto, Médio, Baixo).
-- A ordenação padrão da lista deve ser decrescente pelo nível de risco, ou seja, os alunos classificados como "Alto Risco" devem aparecer obrigatoriamente no topo.
-- O sistema deve utilizar indicadores visuais (cores ou ícones) para destacar e diferenciar os três níveis de risco na listagem.
-- A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado.
-- A tabela não deve carregar todos os alunos de uma vez. A listagem deve ser dividida em páginas, exibindo um limite máximo de 25 alunos por página, onde a primeira página deve conter os alunos com o risco mais crítico.
+-O sistema deve exibir uma listagem contendo os seguintes dados de cada aluno matriculado no curso: nome, matrícula, semestre e nível de risco (Alto, Médio, Baixo).
+-A ordenação padrão da lista deve ser decrescente, priorizando a exibição dos alunos classificados como "Alto Risco" no topo. 
+-O sistema deve utilizar indicadores visuais (cores ou ícones) para destacar e diferenciar os três níveis de risco na listagem.
+-A listagem deve ser paginada, exibindo um limite máximo de 25 alunos por página. 
+-A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado dele.
+-Caso não existam alunos cadastrados ou em risco, o sistema deve exibir uma mensagem indicando que a lista está vazia (estado vazio). 
+
 
 ### Confirmation
 - O painel do coordenador deve renderizar um painel com uma tabela ao centro contendo as colunas: Nome, Matrícula, Semestre e Risco de Evasão;

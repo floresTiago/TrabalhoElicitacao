@@ -423,12 +423,12 @@ para facilitar o contato com os estudantes.
 
 ### Cenário: coordenador acessa o sistema para visualizar os alunos
 ### 01 Cenário Fluxo Principal
-Dado que existem alunos cadastrados e classificados no sistema, como “Maria” (Alto Risco), “João” (Médio Risco) e “Marcos” (Baixo Risco) 
-Quando o coordenador “Rafael” acessar a tela de monitoramento
-Então o sistema deve renderizar uma tabela com as colunas: Nome, Matrícula, Semestre e Risco de Evasão
-E a linha de “Maria” deve aparecer na primeira posição destacada com a cor vermelha
-E a linha de “João” deve vir abaixo na cor laranja
-E a linha de “Marcos” deve estar na base da lista com a cor branca
+Dado que existem alunos cadastrados e classificados no sistema, como “Maria” (Alto Risco), “João” (Médio Risco) e “Marcos” (Baixo Risco) <br>
+Quando o coordenador “Rafael” acessar a tela de monitoramento <br>
+Então o sistema deve renderizar uma tabela com as colunas: Nome, Matrícula, Semestre e Risco de Evasão <br>
+E a linha de “Maria” deve aparecer na primeira posição destacada com a cor vermelha <br>
+E a linha de “João” deve vir abaixo na cor laranja <br>
+E a linha de “Marcos” deve estar na base da lista com a cor branca <br>
 
 ### Cenário: coordenador busca os dados detalhados do aluno
 ### 01 Cenário Fluxo Alternativo

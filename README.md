@@ -325,7 +325,7 @@ Como coordenador do curso, quero ver uma lista com todos os alunos e que classif
 - O sistema deve utilizar indicadores visuais (cores ou ícones) para destacar e diferenciar os três níveis de risco na listagem;
 - A listagem deve ser paginada, exibindo um limite máximo de 25 alunos por página;
 - A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado dele;
-- Caso não existam alunos cadastrados ou em risco, o sistema deve exibir uma mensagem indicando que a lista está vazia (estado vazio);
+- Caso não existam alunos cadastrados, o sistema deve exibir uma mensagem indicando que a lista está vazia (estado vazio);
 
 ### Confirmation
 - O painel do coordenador deve renderizar uma tabela contendo exatamente as colunas: nome, matrícula, semestre e risco de evasão;

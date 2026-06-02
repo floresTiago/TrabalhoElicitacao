@@ -327,56 +327,73 @@ Como coordenador do curso, quero ver uma lista com todos os alunos e que classif
 - A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado dele;
 - Caso não existam alunos cadastrados ou em risco, o sistema deve exibir uma mensagem indicando que a lista está vazia (estado vazio);
 
-
 ### Confirmation
-- O painel do coordenador deve renderizar um painel com uma tabela ao centro contendo as colunas: Nome, Matrícula, Semestre e Risco de Evasão;
-- A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Alto Risco” no topo, seguidos de “Médio Risco” (laranja) e, por último, “Baixo Risco” (Branco)
-- As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno.
-- O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o curso possua mais de 25 alunos importados.
+- O painel do coordenador deve renderizar uma tabela contendo exatamente as colunas: nome, matrícula, semestre e risco de evasão;
+- A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Alto Risco” no topo, seguidos de “Médio Risco” (laranja) e, por último, “Baixo Risco” (Branco);
+- As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno;
+- O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o total ultrapasse mais de 25 alunos importados;
+- O sistema deve exibir uma mensagem de estado vazio na tela caso não haja dados para listar.  
 
 ## História de usuário 002
 
 ### Card
-Como docente, 
-eu quero realizar o upload do diário de classe de minhas disciplinas 
+Como docente ou coordenador, 
+quero realizar o upload do diário de classe de minhas disciplinas 
 para que o sistema possa processar e extrair automaticamente os dados dos alunos matriculados nela.
 
 ### Conversation
-- O upload dos diários deverá ser realizado de forma quinzenal para garantir que a atualização dos indicadores ocorram em um intervalo máximo de 15 dias.
-- O sistema deve receber arquivos baixados pelo SIGAA e funcionar de forma independente dele.
-- Devem ser extraídos do arquivo o semestre, matrícula, nomes, datas de aulas e presença dos alunos matriculados nas disciplinas importadas.
-- Caso o mesmo arquivo seja importado duas vezes, o sistema deve sobrescrever os dados de frequência anteriores e salvar a nova frequência.
-- O sistema deve receber arquivos de até 50 MB. 
+- O upload dos diários deverá ser realizado de forma quinzenal (prazo máximo de 15 dias para atualização); 
+- O sistema deve aceitar e processar exclusivamente arquivos PDF originais gerados pelo SIGAA, extraindo: semestre, matrícula, nomes, datas de aulas e presenças;
+- O sistema deve processar o arquivo importado e atualizar os dados de frequência da disciplina correspondente; 
+- Após uma importação bem-sucedida, o sistema deve exibir uma mensagem confirmando a atualização dos dados da disciplina; 
+- Arquivos que não sejam PDF, que tenham estrutura inválida ou que ultrapassem o limite de 50 MB devem ser rejeitados, exibindo uma mensagem de erro;  
+- O sistema deve exibir um indicador de carregamento enquanto processa o arquivo, bloqueando novos envios até a conclusão;
+- Uma mensagem de alerta de urgência deve aparecer na tela do docente ou coordenador faltando 3 dias para o vencimento do prazo de 15 dias, sendo removida após envio.
 
 ### Confirmation
-- O sistema deve mostrar uma mensagem verde de sucesso após o upload bem sucedido.
-- Uma mensagem de aviso vermelha deve aparecer na tela do docente faltando 3 dias para o vencimento do prazo de 15 dias.
-- O sistema deve exibir um indicador de carregamento na tela enquanto processa o arquivo, bloqueando novos envios até a conclusão.
-- Uma mensagem laranja de alerta deve ser exibida caso o docente envie um arquivo acima do máximo suportado.
+- O sistema deve bloquear caso o arquivo seja maior que 50 MB, não seja PDF ou não tenha a estrutura do SIGAA;  
+- O sistema não deve permitir o upload dos diários de classe após 3 dias após o prazo quinzenal;
+- O alerta de urgência deve ser removido da tela do docente assim que um diário for importado com sucesso.  
 
 ## História de usuário 003
 
 ### Card
 Como docente e coordenador do curso,
-quero que seja identificados alunos com infrequência nas disciplinas em que está matriculado, 
-para distinguir alunos que abandonaram apenas uma disciplina ou o semestre de modo geral, possibilitando a intervenção antecipada.
+quero que sejam identificado os possíveis riscos de evasão do curso, 
+para que os alunos sejam identificados e ações preventivas aconteçam para evitar o abandono definitivo do curso.
 
 ### Conversation
-texto
+- O sistema deve cruzar a frequência atual do aluno (obtida via importação quinzenal de diários) com seu histórico de notas;
+- O parâmetro para definir "Alto Risco" de evasão é a combinação de baixa frequência (menos de 80%) em duas ou mais disciplinas simultâneas somado a notas baixas; 
+- O parâmetro para definir "Médio Risco" é a combinação de baixa frequência (menos de 80%) em duas ou mais disciplinas simultâneas, porém mantendo um bom histórico de notas;
+- O parâmetro para definir "Baixo Risco" é a manutenção da frequência regular (acima de 80%) em todas as disciplinas, ou a infrequência (abaixo de 80%) isolada em apenas uma única disciplina;  	
+- Ao calcular essa probabilidade, o sistema deve atualizar o status do aluno automaticamente para que a listagem do painel exiba os indicadores apropriados.
 
 ### Confirmation
-texto
+- Quando o sistema processar os dados e identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas e com notas baixas, o status do aluno deve ser classificado e gravado como “Alto Risco”;  
+- Quando o sistema identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas, mas que possua notas altas, o status do aluno deve ser classificado e gravado como “Médio Risco”.
+- Quando o sistema identificar que o aluno possui menos de 80% de frequência em apenas uma disciplina, ou possui frequência regular em todas, o status do aluno deve ser classificado e gravado como “Baixo Risco”. 
 
 ## História de usuário 004
 
 ### Card
-texto
+Como docente,
+quero que o sistema me emita um alerta automático caso um aluno tenha duas faltas consecutivas ou quatro faltas acumuladas em minha disciplina, 
+para identificar precocemente um possível abandono da matéria e realizar uma intervenção. 
 
 ### Conversation
-texto
+- O sistema deve processar as frequências registradas através da importação dos diários de classe; 
+- Ao identificar a ocorrência de duas faltas consecutivas de um aluno em uma mesma matéria, o sistema deve alterar o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
+- Duas faltas consecutivas significam ausência em duas aulas sequenciais registradas no diário (dias sem aula ou feriados não afetam a contagem);  
+- O sistema deve identificar alunos com 20% de faltas na disciplina, alterando o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
+- O sistema deve remover o alerta visual do painel quando, em uma nova importação de diário, for identificada uma presença do aluno com data posterior ao alerta. 
+
 
 ### Confirmation
-texto
+- O sistema deve validar a sequência de faltas sempre que houver uma importação de diário de classe. 
+- O alerta deve ser visível na interface restrita do docente que ministra aquela disciplina.
+- Deve ser gerado um alerta  após o registro da segunda falta consecutiva.
+- Deve ser gerado um alerta quando o aluno atingir 20% de faltas.
 
 ## História de usuário 005
 

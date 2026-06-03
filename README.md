@@ -487,14 +487,14 @@ As User Stories foram avaliadas utilizando o modelo INVEST, que auxilia na verif
 |------------|------------------|----------------|-------------|---------------|-------------|--------------|---------------|
 | US01 – Visualizar alunos em risco de evasão | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Possui valor direto para o coordenador, critérios de aceitação bem definidos e pode ser implementada de forma independente. |
 | US02 – Importar diários de classe | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Permite alimentar o sistema com os dados necessários para análise acadêmica e geração de alertas. |
-| US03 – Identificar riscos de evasão | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | Depende dos dados importados pelos diários de classe, mas possui regras claras para classificação dos níveis de risco. |
-| US04 – Identificar risco de infrequência de cada disciplina | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | Requer a importação prévia dos diários, porém apresenta critérios objetivos para emissão de alertas. |
-| US05 – Enviar mensagens para alunos com risco de evasão | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | Depende da identificação prévia de alunos em risco, mas possui valor próprio e critérios verificáveis. |
+| US03 – Identificar riscos de evasão | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | Depende dos dados importados pelos diários de classe, mas possui regras claras para classificação dos níveis de risco. |
+| US04 – Identificar risco de infrequência de cada disciplina | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | Requer a importação prévia dos diários, porém apresenta critérios objetivos para emissão de alertas. |
+| US05 – Enviar mensagens para alunos com risco de evasão | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | Depende da identificação prévia de alunos em risco, mas possui valor próprio e critérios verificáveis. |
 
 ## Legenda
 
 - ✅ Atende ao critério.
-- ⚠️ Atende parcialmente ao critério devido a dependências naturais do domínio.
+- ❌ Não atende ao critério
 
 # 👨‍💻 Colaboradores
 

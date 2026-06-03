@@ -330,11 +330,11 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - Caso não existam alunos cadastrados, o sistema deve exibir uma mensagem indicando que a lista está vazia (estado vazio);
 
 ### Confirmation
-- [] O painel do coordenador deve renderizar uma tabela contendo exatamente as colunas: nome, matrícula, semestre e risco de evasão;
-- [] A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Alto Risco” no topo, seguidos de “Médio Risco” (laranja) e, por último, “Baixo Risco” (Branco);
-- [] As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno;
-- [] O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o total ultrapasse mais de 25 alunos importados;
-- [] O sistema deve exibir uma mensagem de estado vazio na tela caso não haja dados para listar.  
+- [ ] O painel do coordenador deve renderizar uma tabela contendo exatamente as colunas: nome, matrícula, semestre e risco de evasão;
+- [ ] A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Alto Risco” no topo, seguidos de “Médio Risco” (laranja) e, por último, “Baixo Risco” (Branco);
+- [ ] As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno;
+- [ ] O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o total ultrapasse mais de 25 alunos importados;
+- [ ] O sistema deve exibir uma mensagem de estado vazio na tela caso não haja dados para listar.  
 
 ## User Story #02: Importar diários de classe
 
@@ -353,9 +353,8 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - Uma mensagem de alerta de urgência deve aparecer na tela do docente ou coordenador faltando 3 dias para o vencimento do prazo de 15 dias, sendo removida após envio.
 
 ### Confirmation
-- [] O sistema deve bloquear caso o arquivo seja maior que 50 MB, não seja PDF ou não tenha a estrutura do SIGAA;  
-- [] O sistema não deve permitir o upload dos diários de classe após 3 dias após o prazo quinzenal;
-- [] O alerta de urgência deve ser removido da tela do docente assim que um diário for importado com sucesso.  
+- [ ] O sistema deve bloquear caso o arquivo seja maior que 50 MB, não seja PDF ou não tenha a estrutura do SIGAA;  
+- [ ] O alerta de urgência deve ser removido da tela do docente assim que um diário for importado com sucesso.  
 
 ## User Story #03: Identificar riscos de evasão
 
@@ -372,9 +371,9 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - Ao calcular essa probabilidade, o sistema deve atualizar o status do aluno automaticamente para que a listagem do painel exiba os indicadores apropriados.
 
 ### Confirmation
-- [] Quando o sistema processar os dados e identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas e com notas baixas, o status do aluno deve ser classificado e gravado como “Alto Risco”;  
-- [] Quando o sistema identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas, mas que possua notas altas, o status do aluno deve ser classificado e gravado como “Médio Risco”.
-- [] Quando o sistema identificar que o aluno possui menos de 80% de frequência em apenas uma disciplina, ou possui frequência regular em todas, o status do aluno deve ser classificado e gravado como “Baixo Risco”. 
+- [ ] Quando o sistema processar os dados e identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas e com notas baixas, o status do aluno deve ser classificado e gravado como “Alto Risco”;  
+- [ ] Quando o sistema identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas, mas que possua notas altas, o status do aluno deve ser classificado e gravado como “Médio Risco”.
+- [ ] Quando o sistema identificar que o aluno possui menos de 80% de frequência em apenas uma disciplina, ou possui frequência regular em todas, o status do aluno deve ser classificado e gravado como “Baixo Risco”. 
 
 ## User Story #04: Identificar risco de infrequência de cada disciplina
 
@@ -392,10 +391,10 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 
 ### Confirmation
-- [] O sistema deve validar a sequência de faltas sempre que houver uma importação de diário de classe. 
-- [] O alerta deve ser visível na interface restrita do docente que ministra aquela disciplina.
-- [] Deve ser gerado um alerta  após o registro da segunda falta consecutiva.
-- [] Deve ser gerado um alerta quando o aluno atingir 20% de faltas.
+- [ ] O sistema deve validar a sequência de faltas sempre que houver uma importação de diário de classe. 
+- [ ] O alerta deve ser visível na interface restrita do docente que ministra aquela disciplina.
+- [ ] Deve ser gerado um alerta  após o registro da segunda falta consecutiva.
+- [ ] Deve ser gerado um alerta quando o aluno atingir 25% de faltas.
 
 ## User Story #05: Enviar mensagens para alunos com risco de evasão
 
@@ -412,12 +411,12 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - Alunos com status “Trancado” ou “Cancelado” não devem receber notificações.
 
 ### Confirmation
-- [] O sistema deve gerar mensagens automáticas com padrão institucional para alunos em risco de evasão.
-- [] A mensagem deve conter nome do aluno e motivo do alerta.
-- [] O coordenador deve poder editar a mensagem antes do envio.
-- [] O envio da mensagem deve ser registrado no histórico do aluno.
-- [] Alunos com mensagens pendentes de envio devem possuir um alerta visual na lista de alunos em risco de evasão.
-- [] Após o envio da mensagem ou após o coordenador optar por não enviá-la, o alerta deve ser removido automaticamente da lista de alunos em risco.
+- [ ] O sistema deve gerar mensagens automáticas com padrão institucional para alunos em risco de evasão.
+- [ ] A mensagem deve conter nome do aluno e motivo do alerta.
+- [ ] O coordenador deve poder editar a mensagem antes do envio.
+- [ ] O envio da mensagem deve ser registrado no histórico do aluno.
+- [ ] Alunos com mensagens pendentes de envio devem possuir um alerta visual na lista de alunos em risco de evasão.
+- [ ] Após o envio da mensagem ou após o coordenador optar por não enviá-la, o alerta deve ser removido automaticamente da lista de alunos em risco.
 
 # Cenários BDD
 
@@ -458,7 +457,7 @@ Então o sistema cancela a operação imediatamente sem exibir o indicador de ca
 E exibe uma mensagem de erro informando que o arquivo excede o tamanho máximo suportado <br> 
 E nenhum registro da disciplina é alterado no banco de dados. <br>
 
-## Cenário #03: Identificar riscos de evasão
+## Cenário #03: Enviar mensagens para alunos com risco de evasão
 
 ### 03 Cenário Fluxo Principal
 #### Cenário: coordenador envia mensagem para aluno identificado em risco

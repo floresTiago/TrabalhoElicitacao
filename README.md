@@ -440,40 +440,40 @@ Então o sistema direciona o coordenador para a tela de acompanhamento individua
 
 ### Cenário: docente realiza importação do diário de classe
 #### 02 Cenário Fluxo Principal
-Dado que o professor “Rafael” está logado no sistema e acessa a área de importação da disciplina de "Processos de Software e Engenharia de Requisitos”
-E o arquivo selecionado "diario_disciplina.pdf" possui 15 MB e está no formato correto
-Quando “Rafael” confirma o envio do arquivo
-Então o sistema exibe o indicador de carregamento bloqueando a tela para novos envios
-E extrai a matrícula, nome, datas e presenças dos alunos registrados no PDF
-E exibe a mensagem verde "Diário importado com sucesso" após o processamento
+Dado que o professor “Rafael” está logado no sistema e acessa a área de importação da disciplina de "Processos de Software e Engenharia de Requisitos” <br>
+E o arquivo selecionado "diario_disciplina.pdf" possui 15 MB e está no formato correto <b>
+Quando “Rafael” confirma o envio do arquivo <br>
+Então o sistema exibe o indicador de carregamento bloqueando a tela para novos envios <br>
+E extrai a matrícula, nome, datas e presenças dos alunos registrados no PDF <br>
+E exibe a mensagem "Diário importado com sucesso" após o processamento. <br>
 
 ### 02 Cenário Fluxo Alternativo
 #### Cenário: docente importa arquivo acima do limite
-Dado que o docente “Pedro” anexa o arquivo "historico_completo_turmas.zip" para a importação
-E o tamanho verificado do sistema é 55 MB
-Quando “Pedro” clica no botão de confirmar o envio
-Então o sistema cancela a operação imediatamente sem exibir o indicador de carregamento
-E exibe uma mensagem laranja de alerta informando que o arquivo excede o tamanho máximo suportado 
-E nenhum registro da disciplina é alterado no banco de dados.
+Dado que o docente “Pedro” anexa o arquivo "historico_completo_turmas.zip" para a importação <br>
+E o tamanho verificado do sistema é 55 MB <br>
+Quando “Pedro” clica no botão de confirmar o envio <br>
+Então o sistema cancela a operação imediatamente sem exibir o indicador de carregamento <br>
+E exibe uma mensagem de erro informando que o arquivo excede o tamanho máximo suportado <br> 
+E nenhum registro da disciplina é alterado no banco de dados. <br>
 
 ## Cenário 03
 
 ### 03 Cenário Fluxo Principal
 #### Cenário: coordenador envia mensagem para aluno identificado em risco
-Dado que o aluno "Carlos" está marcado como "em risco de evasão"
-e Carlos possui duas semanas consecutivas de infrequência
-Quando o coordenador confirma o envio da mensagem pré-formatada
-Então o sistema envia a mensagem para Carlos
-e registra o envio no histórico do aluno
-e remove o alerta de mensagem pendente da lista de risco
+Dado que o aluno "Carlos" está marcado como "em risco de evasão" <br>
+e Carlos possui duas semanas consecutivas de infrequência <br>
+Quando o coordenador confirma o envio da mensagem pré-formatada <br>
+Então o sistema envia a mensagem para Carlos <br>
+e registra o envio no histórico do aluno <br>
+e remove o alerta de mensagem pendente da lista de risco. <br>
 
 ### 03 Cenário Fluxo Alternativo
 #### Cenário: aluno em risco sem contato cadastrado
-Dado que o aluno "Marcos" está marcado como "em risco de evasão"
-e Marcos não possui e-mail cadastrado
-Quando o coordenador visualizar os alertas de evasão
-Então o sistema deve identificar Marcos como "sem contato disponível"
-E deve exibir um alerta informando a ausência de contato cadastrado
+Dado que o aluno "Marcos" está marcado como "em risco de evasão" <br>
+e Marcos não possui e-mail cadastrado <br>
+Quando o coordenador visualizar os alertas de evasão <br>
+Então o sistema deve identificar Marcos como "sem contato disponível" <br>
+E deve exibir um alerta informando a ausência de contato cadastrado. <br>
 
 # 👨‍💻 Colaboradores
 

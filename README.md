@@ -375,12 +375,12 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - O parâmetro para definir "Risco Baixo" é a indentificação de baixa frequência em uma disciplina;
 - O parâmetro para definir "Sem risco" frequência regular em todas as matérias e bom desempenho acadêmico;
 - Ao calcular essa probabilidade, o sistema deve atualizar o status do aluno automaticamente para que a listagem do painel exiba os indicadores apropriados;
-- Baixo desempenho acadêmico representa a média das notas da disciplinas cursadas <= 7.
+- Baixo desempenho acadêmico representa a média das notas da disciplinas cursadas <= 6.
 
 ### Confirmation
-- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em três ou mais disciplinas e as médias das notas do aluno for <=7, o status do aluno deve ser classificado e gravado como “Risco Urgente”;
+- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em três ou mais disciplinas e as médias das notas do aluno for <=6, o status do aluno deve ser classificado e gravado como “Risco Urgente”;
 - [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em três ou mais disciplinas, o status do aluno deve ser classificado e gravado como “Risco Alto”;  
-- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em duas disciplinas, ou as médias das notas do aluno for <=7, o status do aluno deve ser classificado e gravado como “Risco Moderado”;
+- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em duas disciplinas, ou as médias das notas do aluno for <=6, o status do aluno deve ser classificado e gravado como “Risco Moderado”;
 - [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em uma disciplina, o status do aluno deve ser classificado e gravado como “Risco baixo”;
 - [ ] Demais alunos devem ter o status classificado e gravado como “Sem Risco”. 
 

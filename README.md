@@ -356,7 +356,8 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - Uma mensagem de alerta de urgência deve aparecer na tela do docente ou coordenador faltando 3 dias para o vencimento do prazo de 15 dias, sendo removida após envio.
 
 ### Confirmation
-- [ ] O sistema deve bloquear caso o arquivo seja maior que 50 MB, não seja PDF ou não tenha a estrutura do SIGAA;  
+- [ ] O sistema deve bloquear caso o arquivo seja maior que 50 MB, não seja PDF ou não tenha a estrutura do SIGAA;
+- [ ] O sistema não deve permitir o upload dos diários de classe após 3 dias após o prazo quinzenal;
 - [ ] O alerta de urgência deve ser removido da tela do docente assim que um diário for importado com sucesso.  
 
 ## User Story #03: Identificar riscos de evasão

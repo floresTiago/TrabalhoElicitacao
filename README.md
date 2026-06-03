@@ -325,8 +325,8 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 **para** tomar medidas preventivas que evitem a desistência do curso.
 
 ### Conversation
-- O sistema deve exibir uma listagem contendo os seguintes dados de cada aluno matriculado no curso: nome, matrícula, semestre e nível de risco (Alto, Médio, Baixo);
-- A ordenação padrão da lista deve ser decrescente, priorizando a exibição dos alunos classificados como "Alto Risco" no topo;
+- O sistema deve exibir uma listagem contendo os seguintes dados de cada aluno matriculado no curso: nome, matrícula, semestre e nível de risco (Urgente, Alto, Médio, Baixo);
+- A ordenação padrão da lista deve ser decrescente, priorizando a exibição dos alunos classificados como "Risco Urgente" no topo;
 - O sistema deve utilizar indicadores visuais (cores ou ícones) para destacar e diferenciar os três níveis de risco na listagem;
 - A listagem deve ser paginada, exibindo um limite máximo de 25 alunos por página;
 - A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado dele;
@@ -334,7 +334,7 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 ### Confirmation
 - [ ] O painel do coordenador deve renderizar uma tabela contendo exatamente as colunas: nome, matrícula, semestre e risco de evasão;
-- [ ] A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Alto Risco” no topo, seguidos de “Médio Risco” (laranja) e, por último, “Baixo Risco” (Branco);
+- [ ] A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Risco Urgente” (roxo) no topo, seguidos de "Risco Alto" (vermelho), “Risco Moderado” (laranja), “Risco Biaxo” (amarelo) e, por último, “Sem Risco” (Branco);
 - [ ] As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno;
 - [ ] O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o total ultrapasse mais de 25 alunos importados;
 - [ ] O sistema deve exibir uma mensagem de estado vazio na tela caso não haja dados para listar.  
@@ -369,36 +369,44 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 ### Conversation
 - O sistema deve cruzar a frequência atual do aluno (obtida via importação quinzenal de diários) com seu histórico de notas;
-- O parâmetro para definir "Alto Risco" de evasão é a combinação de baixa frequência (menos de 80%) em duas ou mais disciplinas simultâneas somado a notas baixas; 
-- O parâmetro para definir "Médio Risco" é a combinação de baixa frequência (menos de 80%) em duas ou mais disciplinas simultâneas, porém mantendo um bom histórico de notas;
-- O parâmetro para definir "Baixo Risco" é a manutenção da frequência regular (acima de 80%) em todas as disciplinas, ou a infrequência (abaixo de 80%) isolada em apenas uma única disciplina;  	
-- Ao calcular essa probabilidade, o sistema deve atualizar o status do aluno automaticamente para que a listagem do painel exiba os indicadores apropriados.
+- O parâmetro para definir "Risco Urgente" de evasão é a combinação de baixa frequência em três ou mais disciplinas simultâneas e baixo de desempenho acadêmico; 
+- O parâmetro para definir "Alto Risco" de evasão é a combinação de baixa frequência em três ou mais disciplinas simultâneas; 
+- O parâmetro para definir "Risco Moderado" de evasão é a combinação de baixa frequência em duas ou mais disciplinas simultâneas ou baixo de desempenho acadêmico; 
+- O parâmetro para definir "Risco Baixo" é a indentificação de baixa frequência em uma disciplina;
+- O parâmetro para definir "Sem risco" frequência regular em todas as matérias e bom desempenho acadêmico;
+- Ao calcular essa probabilidade, o sistema deve atualizar o status do aluno automaticamente para que a listagem do painel exiba os indicadores apropriados;
+- Baixo de desempenha acadêmico representa a média das notas da disciplinas cursadas <= 7.
 
 ### Confirmation
-- [ ] Quando o sistema processar os dados e identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas e com notas baixas, o status do aluno deve ser classificado e gravado como “Alto Risco”;  
-- [ ] Quando o sistema identificar um aluno com menos de 80% de frequência em duas ou mais disciplinas, mas que possua notas altas, o status do aluno deve ser classificado e gravado como “Médio Risco”.
-- [ ] Quando o sistema identificar que o aluno possui menos de 80% de frequência em apenas uma disciplina, ou possui frequência regular em todas, o status do aluno deve ser classificado e gravado como “Baixo Risco”. 
+- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em três ou mais disciplinas e as médias das notas do aluno for <=7, o status do aluno deve ser classificado e gravado como “Risco Urgente”;
+- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em três ou mais disciplinas, o status do aluno deve ser classificado e gravado como “Risco Alto”;  
+- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em duas disciplinas, ou as médias das notas do aluno for <=7, o status do aluno deve ser classificado e gravado como “Risco Moderado”;
+- [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em uma disciplina, o status do aluno deve ser classificado e gravado como “Risco baixo”;
+- [ ] Demais alunos devem ter o status classificado e gravado como “Sem Risco”. 
 
 ## User Story #04: Identificar risco de infrequência de cada disciplina
 
 ### Card
 **Como** Docente, <br>
 **eu quero** que o sistema indentifique automáticamente caso um aluno tenha duas faltas consecutivas ou quatro faltas acumuladas em minha disciplina, <br>
-**para** realizar uma intervenção antecipandamente.
+**para** realizar uma intervenção antecipadamente.
 
 ### Conversation
 - O sistema deve processar as frequências registradas através da importação dos diários de classe; 
-- Ao identificar a ocorrência de duas faltas consecutivas de um aluno em uma mesma matéria, o sistema deve alterar o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
-- Duas faltas consecutivas significam ausência em duas aulas sequenciais registradas no diário (dias sem aula ou feriados não afetam a contagem);  
-- O sistema deve identificar alunos com 25% de faltas na disciplina, alterando o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
+- O sistema deve emtir uma alerta ao identificar a ocorrência de faltas de duas semanas consecutivas de um aluno em uma mesma matéria, alterando o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
+- Duas semanas de faltas consecutivas significam ausência em duas aulas sequenciais registradas no diário (dias sem aula ou feriados não afetam a contagem);
+  - Matérias 72 horas aula: significa um total de 16 faltas consecutivas;
+  - Matérias 36 horas aula: significa um total de 8 faltas consecutivas;
+- O sistema deve identificar alunos com 24% de faltas na disciplina, alterando o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
+  - Matérias 72 horas aula: significa um total de 32 faltas;
+  - Matérias 36 horas aula: significa um total de 16 faltas;
 - O sistema deve remover o alerta visual do painel quando, em uma nova importação de diário, for identificada uma presença do aluno com data posterior ao alerta. 
-
 
 ### Confirmation
 - [ ] O sistema deve validar a sequência de faltas sempre que houver uma importação de diário de classe. 
 - [ ] O alerta deve ser visível na interface restrita do docente que ministra aquela disciplina.
-- [ ] Deve ser gerado um alerta  após o registro da segunda falta consecutiva.
-- [ ] Deve ser gerado um alerta quando o aluno atingir 25% de faltas.
+- [ ] Deve ser gerado um alerta  após o registro da segunda semana de falta consecutiva.
+- [ ] Deve ser gerado um alerta quando o aluno atingir 24% de faltas.
 
 ## User Story #05: Enviar mensagens para alunos com risco de evasão
 
@@ -408,7 +416,7 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 **para** facilitar o contato com os estudantes.
 
 ### Conversation
-- Apenas alunos identificados com risco de evasão podem receber mensagens automáticas.
+- Apenas alunos identificados com risco moderado de evasão ou superior podem receber mensagens automáticas.
 - O sistema deve permitir que o coordenador revise a mensagem antes do envio.
 - O envio da mensagem deve ocorrer somente após confirmação manual do coordenador.
 - O sistema deve registrar data, horário e responsável pelo envio da mensagem.
@@ -428,11 +436,13 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 ### Cenário: coordenador acessa o sistema para visualizar os alunos
 ### 01 Cenário Fluxo Principal
-Dado que existem alunos cadastrados e classificados no sistema, como “Maria” (Alto Risco), “João” (Médio Risco) e “Marcos” (Baixo Risco) <br>
+Dado que existem alunos cadastrados e classificados no sistema, como “Maria” (Risco Urgente), “João” (Risco Alto), "Pedro" (Risco Moderado), "Ana" (Risco Biaxo) e “Marcos” (Sem Risco) <br>
 Quando o coordenador “Rafael” acessar a tela de monitoramento <br>
 Então o sistema deve renderizar uma tabela com as colunas: Nome, Matrícula, Semestre e Risco de Evasão <br>
-E a linha de “Maria” deve aparecer na primeira posição destacada com a cor vermelha <br>
-E a linha de “João” deve vir abaixo na cor laranja <br>
+E a linha de “Maria” deve aparecer na primeira posição destacada com a cor roxa <br>
+E a linha de “João” deve vir abaixo na cor vermelha <br>
+E a linha de “Marcos” deve vir abaixo na cor laranja <br>
+E a linha de “João” deve vir abaixo na cor amarelo <br>
 E a linha de “Marcos” deve estar na base da lista com a cor branca <br>
 
 ### Cenário: coordenador busca os dados detalhados do aluno
@@ -465,19 +475,19 @@ E nenhum registro da disciplina é alterado no banco de dados. <br>
 
 ### 03 Cenário Fluxo Principal
 #### Cenário: coordenador envia mensagem para aluno identificado em risco
-Dado que o aluno "Carlos" está marcado como "em risco de evasão" <br>
-e "Carlos" possui duas semanas consecutivas de infrequência <br>
+Dado que o aluno "João" está marcado como "Alto Risco" <br>
+e "João" possui duas semanas consecutivas de infrequência <br>
 Quando o coordenador confirma o envio da mensagem pré-formatada <br>
-Então o sistema envia a mensagem para "Carlos" <br>
+Então o sistema envia a mensagem para "João" <br>
 e registra o envio no histórico do aluno <br>
 e remove o alerta de mensagem pendente da lista de risco. <br>
 
 ### 03 Cenário Fluxo Alternativo
 #### Cenário: aluno em risco sem contato cadastrado
-Dado que o aluno "Marcos" está marcado como "em risco de evasão" <br>
-e "Marcos" não possui e-mail cadastrado <br>
+Dado que o aluno "João" está marcado como "Alto Risco" <br>
+e "João" não possui e-mail cadastrado <br>
 Quando o coordenador visualizar os alertas de evasão <br>
-Então o sistema deve identificar "Marcos" como "sem contato disponível" <br>
+Então o sistema deve identificar "João" como "sem contato disponível" <br>
 E deve exibir um alerta informando a ausência de contato cadastrado. <br>
 
 # 📏 Avaliação INVEST

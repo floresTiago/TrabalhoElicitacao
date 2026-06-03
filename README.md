@@ -334,7 +334,7 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 ### Confirmation
 - [ ] O painel do coordenador deve renderizar uma tabela contendo exatamente as colunas: nome, matrícula, semestre e risco de evasão;
-- [ ] A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Risco Urgente” (roxo) no topo, seguidos de "Risco Alto" (vermelho), “Risco Moderado” (laranja), “Risco Biaxo” (amarelo) e, por último, “Sem Risco” (Branco);
+- [ ] A tabela deve organizar as linhas automaticamente por gravidade, fixando os alunos em “Risco Urgente” (roxo) no topo, seguidos de "Risco Alto" (vermelho), “Risco Moderado” (laranja), “Risco Baixo” (amarelo) e, por último, “Sem Risco” (Branco);
 - [ ] As linhas da tabela devem ser clicáveis, funcionando como um ponto de acesso ao painel de acompanhamento individual de cada aluno;
 - [ ] O sistema deve exibir controles de paginação como botões de "Próximo", "Anterior" e números das páginas no rodapé da tabela caso o total ultrapasse mais de 25 alunos importados;
 - [ ] O sistema deve exibir uma mensagem de estado vazio na tela caso não haja dados para listar.  
@@ -369,13 +369,13 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 ### Conversation
 - O sistema deve cruzar a frequência atual do aluno (obtida via importação quinzenal de diários) com seu histórico de notas;
-- O parâmetro para definir "Risco Urgente" de evasão é a combinação de baixa frequência em três ou mais disciplinas simultâneas e baixo de desempenho acadêmico; 
+- O parâmetro para definir "Risco Urgente" de evasão é a combinação de baixa frequência em três ou mais disciplinas simultâneas e baixo desempenho acadêmico; 
 - O parâmetro para definir "Alto Risco" de evasão é a combinação de baixa frequência em três ou mais disciplinas simultâneas; 
-- O parâmetro para definir "Risco Moderado" de evasão é a combinação de baixa frequência em duas ou mais disciplinas simultâneas ou baixo de desempenho acadêmico; 
+- O parâmetro para definir "Risco Moderado" de evasão é a combinação de baixa frequência em duas ou mais disciplinas simultâneas ou baixo desempenho acadêmico; 
 - O parâmetro para definir "Risco Baixo" é a indentificação de baixa frequência em uma disciplina;
 - O parâmetro para definir "Sem risco" frequência regular em todas as matérias e bom desempenho acadêmico;
 - Ao calcular essa probabilidade, o sistema deve atualizar o status do aluno automaticamente para que a listagem do painel exiba os indicadores apropriados;
-- Baixo de desempenha acadêmico representa a média das notas da disciplinas cursadas <= 7.
+- Baixo desempenho acadêmico representa a média das notas da disciplinas cursadas <= 7.
 
 ### Confirmation
 - [ ] Quando o sistema identificar um aluno com faltas equivalentes a 24% da frequência ou faltas consecutivas em duas semanas em três ou mais disciplinas e as médias das notas do aluno for <=7, o status do aluno deve ser classificado e gravado como “Risco Urgente”;
@@ -395,11 +395,11 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - O sistema deve processar as frequências registradas através da importação dos diários de classe; 
 - O sistema deve emtir uma alerta ao identificar a ocorrência de faltas de duas semanas consecutivas de um aluno em uma mesma matéria, alterando o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
 - Duas semanas de faltas consecutivas significam ausência em duas aulas sequenciais registradas no diário (dias sem aula ou feriados não afetam a contagem);
-  - Matérias 72 horas aula: significa um total de 16 faltas consecutivas;
-  - Matérias 36 horas aula: significa um total de 8 faltas consecutivas;
+  - Matérias 72 horas-aula: significa um total de 8 faltas consecutivas;
+  - Matérias 36 horas-aula: significa um total de 4 faltas consecutivas;
 - O sistema deve identificar alunos com 24% de faltas na disciplina, alterando o status desse aluno naquela matéria para "Risco de desistência da disciplina” e exibir um alerta visual no painel do docente;
-  - Matérias 72 horas aula: significa um total de 32 faltas;
-  - Matérias 36 horas aula: significa um total de 16 faltas;
+  - Matérias 72 horas-aula: significa um total de 16 faltas;
+  - Matérias 36 horas-aula: significa um total de 8 faltas;
 - O sistema deve remover o alerta visual do painel quando, em uma nova importação de diário, for identificada uma presença do aluno com data posterior ao alerta. 
 
 ### Confirmation
@@ -436,13 +436,13 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 
 ### Cenário: coordenador acessa o sistema para visualizar os alunos
 ### 01 Cenário Fluxo Principal
-Dado que existem alunos cadastrados e classificados no sistema, como “Maria” (Risco Urgente), “João” (Risco Alto), "Pedro" (Risco Moderado), "Ana" (Risco Biaxo) e “Marcos” (Sem Risco) <br>
+Dado que existem alunos cadastrados e classificados no sistema, como “Maria” (Risco Urgente), “João” (Risco Alto), "Pedro" (Risco Moderado), "Ana" (Risco Baixo) e “Marcos” (Sem Risco) <br>
 Quando o coordenador “Rafael” acessar a tela de monitoramento <br>
 Então o sistema deve renderizar uma tabela com as colunas: Nome, Matrícula, Semestre e Risco de Evasão <br>
 E a linha de “Maria” deve aparecer na primeira posição destacada com a cor roxa <br>
 E a linha de “João” deve vir abaixo na cor vermelha <br>
-E a linha de “Marcos” deve vir abaixo na cor laranja <br>
-E a linha de “João” deve vir abaixo na cor amarelo <br>
+E a linha de “Pedro” deve vir abaixo na cor laranja <br>
+E a linha de “Ana” deve vir abaixo na cor amarelo <br>
 E a linha de “Marcos” deve estar na base da lista com a cor branca <br>
 
 ### Cenário: coordenador busca os dados detalhados do aluno

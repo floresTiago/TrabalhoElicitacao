@@ -403,8 +403,8 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 ## User Story #05: Enviar mensagens para alunos com risco de evasão
 
 ### Card
-**Como** Coordenador do Curso,
-**eu quero** enviar mensagens pré-formatadas aos alunos com risco de evasão
+**Como** Coordenador do Curso, <br>
+**eu quero** enviar mensagens pré-formatadas aos alunos com risco de evasão, <br>
 **para** facilitar o contato com os estudantes.
 
 ### Conversation

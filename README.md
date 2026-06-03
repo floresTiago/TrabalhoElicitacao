@@ -23,6 +23,9 @@
   - [✅ Requisitos Funcionais](#-requisitos-funcionais)
   - [🚀 Requisitos Funcionais Evolutivos](#-requisitos-funcionais-evolutivos)
   - [🔒 Requisitos Não Funcionais](#-requisitos-não-funcionais)
+- [📖 User Stories](#-user-stories)
+- [🎬 Cenários BDD](#-cenários-bdd)
+- [📏 Avaliação INVEST](#-avaliação-invest)
 - [👨‍💻 Colaboradores](#-colaboradores)
 - [🎓 Disciplina](#-disciplina)
 
@@ -312,7 +315,7 @@ O sistema deverá garantir a proteção e confidencialidade dos dados acadêmico
 ### RNF003 — Periodicidade do processamento de indicadores
 O sistema deverá processar e atualizar os indicadores de evasão em intervalos máximos de 15 dias, garantindo informações recentes para acompanhamento institucional.
 
-# User Story
+# 📖 User Stories
 
 ## User Story #01: Visualizar alunos em risco de evasão
 
@@ -418,7 +421,7 @@ O sistema deverá processar e atualizar os indicadores de evasão em intervalos 
 - [ ] Alunos com mensagens pendentes de envio devem possuir um alerta visual na lista de alunos em risco de evasão.
 - [ ] Após o envio da mensagem ou após o coordenador optar por não enviá-la, o alerta deve ser removido automaticamente da lista de alunos em risco.
 
-# Cenários BDD
+# 🎬 Cenários BDD
 
 ## Cenário #01: Visualizar alunos em risco de evasão
 
@@ -475,6 +478,23 @@ e "Marcos" não possui e-mail cadastrado <br>
 Quando o coordenador visualizar os alertas de evasão <br>
 Então o sistema deve identificar "Marcos" como "sem contato disponível" <br>
 E deve exibir um alerta informando a ausência de contato cadastrado. <br>
+
+# 📏 Avaliação INVEST
+
+As User Stories foram avaliadas utilizando o modelo INVEST, que auxilia na verificação da qualidade e adequação das histórias de usuário para o processo de desenvolvimento.
+
+| User Story | Independente (I) | Negociável (N) | Valiosa (V) | Estimável (E) | Pequena (S) | Testável (T) | Justificativa |
+|------------|------------------|----------------|-------------|---------------|-------------|--------------|---------------|
+| US01 – Visualizar alunos em risco de evasão | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Possui valor direto para o coordenador, critérios de aceitação bem definidos e pode ser implementada de forma independente. |
+| US02 – Importar diários de classe | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Permite alimentar o sistema com os dados necessários para análise acadêmica e geração de alertas. |
+| US03 – Identificar riscos de evasão | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | Depende dos dados importados pelos diários de classe, mas possui regras claras para classificação dos níveis de risco. |
+| US04 – Identificar risco de infrequência de cada disciplina | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | Requer a importação prévia dos diários, porém apresenta critérios objetivos para emissão de alertas. |
+| US05 – Enviar mensagens para alunos com risco de evasão | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | Depende da identificação prévia de alunos em risco, mas possui valor próprio e critérios verificáveis. |
+
+## Legenda
+
+- ✅ Atende ao critério.
+- ⚠️ Atende parcialmente ao critério devido a dependências naturais do domínio.
 
 # 👨‍💻 Colaboradores
 

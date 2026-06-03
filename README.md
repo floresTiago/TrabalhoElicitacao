@@ -323,7 +323,7 @@ Como coordenador do curso, quero ver uma lista com todos os alunos e que classif
 - O sistema deve exibir uma listagem contendo os seguintes dados de cada aluno matriculado no curso: nome, matrícula, semestre e nível de risco (Alto, Médio, Baixo);
 - A ordenação padrão da lista deve ser decrescente, priorizando a exibição dos alunos classificados como "Alto Risco" no topo;
 - O sistema deve utilizar indicadores visuais (cores ou ícones) para destacar e diferenciar os três níveis de risco na listagem;
-- A listagem deve ser paginada, exibindo um limite máximo de 25 alunos por página caso ultrapasse mais de 25 alunos importados;
+- A listagem deve ser paginada, exibindo um limite máximo de 25 alunos por página;
 - A listagem deve servir como ponto de partida: ao interagir com o registro de um aluno, o coordenador será direcionado para o perfil detalhado dele;
 - Caso não existam alunos cadastrados, o sistema deve exibir uma mensagem indicando que a lista está vazia (estado vazio);
 

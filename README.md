@@ -441,7 +441,7 @@ Então o sistema direciona o coordenador para a tela de acompanhamento individua
 ### Cenário: docente realiza importação do diário de classe
 #### 02 Cenário Fluxo Principal
 Dado que o professor “Rafael” está logado no sistema e acessa a área de importação da disciplina de "Processos de Software e Engenharia de Requisitos” <br>
-E o arquivo selecionado "diario_disciplina.pdf" possui 15 MB e está no formato correto <b>
+E o arquivo selecionado "diario_disciplina.pdf" possui 15 MB e está no formato correto <br>
 Quando “Rafael” confirma o envio do arquivo <br>
 Então o sistema exibe o indicador de carregamento bloqueando a tela para novos envios <br>
 E extrai a matrícula, nome, datas e presenças dos alunos registrados no PDF <br>

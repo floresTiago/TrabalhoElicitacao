@@ -461,18 +461,18 @@ E nenhum registro da disciplina é alterado no banco de dados. <br>
 ### 03 Cenário Fluxo Principal
 #### Cenário: coordenador envia mensagem para aluno identificado em risco
 Dado que o aluno "Carlos" está marcado como "em risco de evasão" <br>
-e Carlos possui duas semanas consecutivas de infrequência <br>
+e "Carlos" possui duas semanas consecutivas de infrequência <br>
 Quando o coordenador confirma o envio da mensagem pré-formatada <br>
-Então o sistema envia a mensagem para Carlos <br>
+Então o sistema envia a mensagem para "Carlos" <br>
 e registra o envio no histórico do aluno <br>
 e remove o alerta de mensagem pendente da lista de risco. <br>
 
 ### 03 Cenário Fluxo Alternativo
 #### Cenário: aluno em risco sem contato cadastrado
 Dado que o aluno "Marcos" está marcado como "em risco de evasão" <br>
-e Marcos não possui e-mail cadastrado <br>
+e "Marcos" não possui e-mail cadastrado <br>
 Quando o coordenador visualizar os alertas de evasão <br>
-Então o sistema deve identificar Marcos como "sem contato disponível" <br>
+Então o sistema deve identificar "Marcos" como "sem contato disponível" <br>
 E deve exibir um alerta informando a ausência de contato cadastrado. <br>
 
 # 👨‍💻 Colaboradores
